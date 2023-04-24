@@ -5,7 +5,7 @@ Deploy to a remote server using rsync.
 example usage to sync everything in the workspace folder:
 ```
 - name: deploy to server
-        uses: AEnterprise/rsync-deploy@v1.0
+        uses: trewknowledge/rsync-deploy@master
         env:
           DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-e -c -r --delete"
@@ -16,4 +16,4 @@ example usage to sync everything in the workspace folder:
           SERVER_DESTINATION: ${{ secrets.SERVER_DESTINATION }}
 ```
 
-If you only want to sync a specific subfolder you can put that folder in the folder env var instead
+If you only want to sync a specific sub-folder you can put that folder in the folder env var instead
