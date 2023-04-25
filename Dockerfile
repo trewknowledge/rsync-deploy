@@ -1,6 +1,7 @@
 FROM alpine:edge
 
 RUN apk add --no-cache rsync openssh
+RUN echo "PubkeyAcceptedKeyTypes +ssh-rsa" >> /etc/ssh/ssh_config
 
 # Label
 LABEL "com.github.actions.name"="Deploy with rsync"
