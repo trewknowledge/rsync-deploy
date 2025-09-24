@@ -1,4 +1,4 @@
-FROM alpine:3.18.4
+FROM ghcr.io/library/alpine:3.18.4
 
 RUN apk add --no-cache rsync openssh
 RUN echo "PubkeyAcceptedKeyTypes +ssh-rsa" >> /etc/ssh/ssh_config
